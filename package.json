@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^22.6.5",
-    "puppeteer-video-recorder": "^1.0.5"
+    "puppeteer": "^22.6.5"
   }
 }
