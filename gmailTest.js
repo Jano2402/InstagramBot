@@ -13,13 +13,15 @@ const puppeteer = require('puppeteer');
     await page.keyboard.press('Enter');
     await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');
-    await page.setDefaultTimeout(10000);
+    page.setDefaultTimeout(10000);
     await page.waitForNavigation();
 
     await page.keyboard.type('Gerardo');
     await page.keyboard.press('Tab');
     await page.keyboard.press('Tab');
     await page.keyboard.press('Enter');
+    page.setDefaultTimeout(50000);
+    await page.waitForNavigation();
     
     await page.screenshot({ path : 'example.png' });
     
